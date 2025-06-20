@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="first_fragment_label">Recipes List</string>
+    <string name="second_fragment_label">Recipe Details</string>
+    <string name="empty_receita">No recipes found!</string>
+    <string name="ingredientes">Ingredients</string>
+    <string name="nenhum_ingrediente_adicionado">No ingredient added!</string>
+    <string name="modo_de_preparo">Directions</string>
+    <string name="empty_passo">No directions added!</string>
+    <string name="imagem_selecionada">Selected image:</string>
+    <string name="selecione_a_capa_da_receita">Select recipe cover</string>
+    <string name="adicionar_receita">Add Recipe</string>
+    <string name="editar_receita">Edit Recipe</string>
+    <string name="excluir_receita">Delete Recipe</string>
+    <string name="editar_passo">Edit Step</string>
+    <string name="excluir_passo">Delete Step</string>
+    <string name="editar_ingrediente">Edit Ingredient</string>
+    <string name="excluir_ingrediente">Delete Ingredient</string>
+    <string name="app_name">Recipe Book</string>
+    <string name="receita">"Recipe: "</string>
+    <string name="nova_receita">New Recipe</string>
+    <string name="titulo_receita">Recipe Title</string>
+    <string name="descricao">Description</string>
+    <string name="nome">Name</string>
+    <string name="confirmar">Confirm</string>
+    <string name="cancelar">Cancel</string>
+    <string name="titulo_obrigatorio">The title is required!</string>
+    <string name="novo_passo">New Step</string>
+    <string name="novo_ingrediente">New Ingredient</string>
+    <string name="receita_state_erro">Unable to load the recipes! Please try again later!</string>
+    <string name="receita_completa_state_erro">Unable to load the recipe details!</string>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Caderno de Receitas</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Lista de receitas</string>
+    <string name="second_fragment_label">Detalhes da receita</string>
+
+    <string name="empty_receita">Não foi encontrado nenhuma receita!</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="nenhum_ingrediente_adicionado">Nenhum ingrediente adicionado!</string>
+    <string name="modo_de_preparo">Modo de Preparo</string>
+    <string name="empty_passo">Nenhum passo do modo de preparo adicionado!</string>
+    <string name="imagem_selecionada">"Imagem selecionada: "</string>
+    <string name="selecione_a_capa_da_receita">Selecione a capa da receita</string>
+    <string name="adicionar_receita">Adicionar Receita</string>
+    <string name="editar_receita">Editar Receita</string>
+    <string name="excluir_receita">Excluir Receita</string>
+    <string name="editar_passo">Editar Passo</string>
+    <string name="excluir_passo">Excluir Passo</string>
+    <string name="editar_ingrediente">Editar Ingrediente</string>
+    <string name="excluir_ingrediente">Excluir Ingrediente</string>
+    <string name="receita">"Receita: "</string>
+    <string name="nova_receita">Nova Receita</string>
+    <string name="titulo_receita">Título da Receita</string>
+    <string name="descricao">Descrição</string>
+    <string name="nome">Nome</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="titulo_obrigatorio">O título é obrigatório!</string>
+    <string name="novo_passo">Novo Passo</string>
+    <string name="novo_ingrediente">Novo Ingrediente</string>
+    <string name="receita_state_erro">Não foi possível carregas as receitas! Tente novamente mais tarde!</string>
+    <string name="receita_completa_state_erro">Não foi possível carregar detalhes da receita!</string>
+</resources>

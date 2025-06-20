@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="16dp"
+              xmlns:tools="http://schemas.android.com/tools">
+    <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Título"
+            android:textSize="28sp"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+    />
+    <Button android:id="@+id/capa_receita_picker"
+            android:visibility="gone"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button" android:text="@string/selecione_a_capa_da_receita"/>
+    <TextView android:text="@string/imagem_selecionada"
+              android:visibility="gone"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/tv_image_path" style="@style/TextAppearance.AppCompat.Body1"/>
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dialog_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/ListagemReceitas">
+
+    <fragment
+            android:id="@+id/ListagemReceitas"
+            android:name="br.com.aline.receitasapp.presentation.receitas.ReceitasListagemFragment"
+            android:label="@string/first_fragment_label"
+            tools:layout="@layout/listagem_receitas">
+
+        <action
+                android:id="@+id/action_ListagemReceitas_to_ReceitaDetalhe"
+                app:destination="@id/ReceitaDetalhe"/>
+    </fragment>
+    <fragment
+            android:id="@+id/ReceitaDetalhe"
+            android:name="br.com.aline.receitasapp.presentation.receitaDetalhe.ReceitaDetalheFragment"
+            android:label="@string/second_fragment_label"
+            tools:layout="@layout/detalhes_receita">
+
+        <action
+                android:id="@+id/action_ReceitaDetalhe_to_ListagemReceitas"
+                app:destination="@id/ListagemReceitas"/>
+    </fragment>
+</navigation>

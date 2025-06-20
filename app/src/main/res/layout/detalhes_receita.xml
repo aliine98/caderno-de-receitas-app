@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".presentation.receitaDetalhe.ReceitaDetalheFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+        <ProgressBar
+                android:layout_marginTop="30dp"
+                tools:visibility="visible"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:id="@+id/loading_ingredientes"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/listaIngredientes"
+                app:layout_constraintStart_toStartOf="@+id/listaIngredientes"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+        <TextView
+                android:layout_marginTop="8dp"
+                android:text="@string/ingredientes"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_ingrediente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/baseline_add_24"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:id="@+id/empty_ingrediente"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                tools:visibility="visible"
+                android:text="@string/nenhum_ingrediente_adicionado"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/listaIngredientes"
+                app:layout_constraintStart_toStartOf="@+id/listaIngredientes"
+                app:layout_constraintTop_toBottomOf="@+id/textView"/>
+        <androidx.recyclerview.widget.RecyclerView
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_ingrediente"
+                android:id="@+id/listaIngredientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <TextView
+                android:layout_marginTop="80dp"
+                android:text="@string/modo_de_preparo"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tv_modopreparo"
+                app:layout_constraintTop_toBottomOf="@+id/listaIngredientes"
+                app:layout_constraintStart_toStartOf="parent"/>
+        <com.google.android.material.button.MaterialButton
+                android:id="@+id/add_passo_modo_preparo"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="70dp"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/baseline_add_24"
+                style="@style/Widget.Material3.Button.IconButton.Filled"
+                app:layout_constraintTop_toBottomOf="@+id/listaIngredientes" app:layout_constraintEnd_toEndOf="parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_passo_preparo"
+                android:id="@+id/listaPassosPreparo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_modopreparo"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+        <ProgressBar
+                tools:visibility="visible"
+                android:indeterminate="true"
+                android:visibility="gone"
+                android:layout_marginTop="30dp"
+                android:id="@+id/loading_passos_preparo"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/listaPassosPreparo"
+                app:layout_constraintStart_toStartOf="@+id/listaPassosPreparo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_modopreparo"/>
+        <TextView
+                tools:visibility="visible"
+                android:visibility="gone"
+                android:layout_marginTop="30dp"
+                android:id="@+id/empty_passos"
+                android:text="@string/empty_passo"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:textAlignment="center"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/listaPassosPreparo"
+                app:layout_constraintStart_toStartOf="@+id/listaPassosPreparo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_modopreparo"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
