@@ -1,13 +1,10 @@
 package br.com.aline.receitasapp.presentation
 
-import android.database.CursorWindow
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import br.com.aline.receitasapp.R
 import br.com.aline.receitasapp.databinding.ActivityMainBinding
-import java.lang.reflect.Field
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,13 +12,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        /*try {
-            val field: Field = CursorWindow::class.java.getDeclaredField("sCursorWindowSize")
-            field.isAccessible = true
-            field.set(null, 40 * 1024 * 1024) //the 40MB is the new size
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }*/
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -33,7 +23,7 @@ class MainActivity : AppCompatActivity() {
                     supportActionBar?.setDisplayHomeAsUpEnabled(true)
                 }
                 R.id.ListagemReceitas -> {
-                    supportActionBar?.title = "Caderno de Receitas"
+                    supportActionBar?.title = getString(R.string.app_name)
                     supportActionBar?.setDisplayHomeAsUpEnabled(false)
                 }
             }
